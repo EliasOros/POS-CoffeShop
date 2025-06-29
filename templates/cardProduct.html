@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cardProduct.css') }}">
+</head>
+<body>
+
+<div class="products-container">
+    <img src= "{{ url_for('static', filename='images/Cafe.png') }}" alt="Dona sencilla">
+    <h2>Dona sencilla</h2>
+    
+    <div class="selector">
+        <label for="preparacion">Preparación:</label>
+        <select id="preparacion" name="preparacion">
+            <option disabled selected>Elige la preparación</option>
+            <option>Natural</option>
+            <option>Caliente</option>
+            <option>Con chispas</option>
+        </select>
+    </div>
+
+    <div class="selector">
+        <label for="cantidad">Cantidad:</label>
+        <select id="cantidad" name="cantidad">
+            <option disabled selected>Elige la cantidad</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+
+    <button class="btn-agregar">➕ Agregar al pedido</button>
+</div>
+
+</body>
+</html>
